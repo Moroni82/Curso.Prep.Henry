@@ -62,7 +62,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
- if (x==y){return true} else {return false} 
+return  x==y
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -97,14 +97,14 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {return true} else {return false}
+  return num % 2 == 0
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 == 0) {return false} else {return true}
+  return num % 2 != 0
 }
 
 function elevarAlCuadrado(num) {
@@ -152,7 +152,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-   if(numero > 0){return "Es positivo"} else if(numero == 0){return false} else if(numero < 0){return "Es negativo"}
+   if(numero > 0){
+      return "Es positivo"} 
+   else if(numero == 0){
+      return false} 
+   else if(numero < 0){
+      return "Es negativo"}
 }
 
 function agregarSimboloExclamacion(str) {
